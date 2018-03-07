@@ -17,8 +17,8 @@ const json=()=>{
     for( const [ key, val ] of arr ){
 	const keyChain=key.split('.');
 	setValue(json, keyChain, val);
-    }    
-    console.log(json);
+    }
+    return json;
 }
 
 module.exports=json;
