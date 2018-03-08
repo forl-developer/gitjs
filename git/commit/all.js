@@ -20,7 +20,7 @@ const all=(message)=>{
     if( modified.length>0 ) msg+='[modify]'
     if( untracked.length>0 ) msg+='[add]'
     if( msg.length===0 ){
-	conole.log('git.commit no updated file');
+	console.log('git.commit no updated file');
 	return '';
     }
     if( message!=null ) msg+=' '+message;
