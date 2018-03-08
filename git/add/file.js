@@ -5,7 +5,6 @@ const file=(filepath)=>{
     if( filepath==null ) return false;
     if( isPrivateKey(filepath) ){ throw new Error('!!!!! '+filepath+' is private key !!!!!'); }
     
-
     try{ exec('git add '+filepath); }
     catch(e){
 	console.log('git.add.file catch exception');
