@@ -2,3 +2,5 @@
 !.gitignore
 !git.js
 !git/
+!gitjs
+!package.json
