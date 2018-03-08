@@ -1,6 +1,11 @@
 *
+*~
+#*#
+*.swp
 !.gitignore
-!git.js
-!git/
-!gitjs
-!package.json
+!/isPrivateKey.js
+!/includesPrivateKey.js
+!/git.js
+!/git/
+!/gitjs/
+!/package.json

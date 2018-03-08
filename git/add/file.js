@@ -1,9 +1,9 @@
 const exec=require('child_process').execSync;
-const isPrivateKey=require('../../isPrivateKey');
+const includesPrivateKey=require('../../includesPrivateKey');
 
 const file=(filepath)=>{
     if( filepath==null ) return false;
-    if( isPrivateKey(filepath) ){ throw new Error('!!!!! '+filepath+' is private key !!!!!'); }
+    if( includesPrivateKey(filepath) ){ throw new Error('!!!!! '+filepath+' includes private key !!!!!\n git add command rejected'); }
     
     try{ exec('git add '+filepath); }
     catch(e){

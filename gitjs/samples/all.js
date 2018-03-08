@@ -14,6 +14,8 @@ console.log(git.config.json());
 console.log(git.remote.json());
 console.log(git.remote.name());
 console.log(git.remote.url());
-console.log(git.push({ u: true }, [ 'github', 'master' ]));
+//console.log(git.push({ u: true }, [ 'github', 'master' ]));
 //console.log(git.commit.all());
 
+console.log(git.add.all());
+console.log(git.add.file());

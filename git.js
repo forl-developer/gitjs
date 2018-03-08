@@ -6,6 +6,7 @@ const status=require('./git/status');
 const remote=require('./git/remote');
 const commit=require('./git/commit');
 const push=require('./git/push');
+const add=require('./git/add');
 
 const git={
     branch: branch,
@@ -16,6 +17,7 @@ const git={
     remote: remote,
     commit: commit,
     push: push,
+    add: add,
 }
 
 module.exports=git;

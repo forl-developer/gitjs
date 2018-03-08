@@ -11,12 +11,15 @@ const json=()=>{
 	    obj=json[key];
 	    continue;
 	}
-	console.log(l);
-	if( l.indexOf(' ')===0 ) obj['message']=l.trim();
 
+	if( l.indexOf(' ')===0 ){
+	    if( obj['message']!=null ) obj['message']+=l.trim()+'\n';
+	    else  obj['message']=l.trim()+'\n';	    
+	}
+	
 	const arr=l.split(' ').filter(a=>{ return a.length!==0 });
 	if( arr.length===0 ) continue;
-	console.log(arr);
+
 	if( arr[0].indexOf(':')===arr[0].length-1 ){	    
 	    const key=arr[0].replace(':', '');
 	    if( key==='Date' ) obj[key]=new Date(arr[1]);

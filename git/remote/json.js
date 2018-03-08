@@ -18,7 +18,6 @@ const json=()=>{
     	json[l[0]]['url']=l[1];
     }
     return json;
-//    console.log(json);
 }
 
 module.exports=json;
